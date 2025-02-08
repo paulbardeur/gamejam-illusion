@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScenes : MonoBehaviour
 {
+    public void goToLevelOne()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
     public void goToLevelTwo()
     {
         SceneManager.LoadScene("Level2");
