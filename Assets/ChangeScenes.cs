@@ -7,6 +7,31 @@ public class ChangeScenes : MonoBehaviour
 {
     public void goToLevelTwo()
     {
-        SceneManager.LoadScene("TutorialFinal");
+        SceneManager.LoadScene("Level2");
+    }
+
+    public void goToLevelThree()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+
+    public void goToLevelFour()
+    {
+        SceneManager.LoadScene("Level4");
+    }
+
+    public void goToLevelSix()
+    {
+        SceneManager.LoadScene("Level6");
+    }
+
+    public void goToLevelSeven()
+    {
+        SceneManager.LoadScene("Level7");
+    }
+
+    public void goToLevelHeight()
+    {
+        SceneManager.LoadScene("Level8");
     }
 }
