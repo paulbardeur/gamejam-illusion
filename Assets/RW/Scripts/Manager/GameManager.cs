@@ -5,28 +5,32 @@ using UnityEngine.Events;
 
 namespace RW.MonumentValley
 {
-
+    [RequireComponent(typeof(AudioSource))]
     public class GameManager : MonoBehaviour
     {
         private PlayerController playerController;
-
         private bool isGameOver;
         public bool IsGameOver => isGameOver;
 
         public float delayTime = 2f;
 
         public UnityEvent awakeEvent;
-
         public UnityEvent initEvent;
-
         public UnityEvent endLevelEvent;
 
+        private AudioSource audioSource;
+
+        [SerializeField] private AudioClip backgroundMusic;
+        [SerializeField] private AudioClip winSound;
 
         private void Awake()
         {
             awakeEvent.Invoke();
 
             playerController = FindObjectOfType<PlayerController>();
+            audioSource = GetComponent<AudioSource>();
+
+            PlayBackgroundMusic();
         }
 
         private void Start()
@@ -52,6 +56,7 @@ namespace RW.MonumentValley
 
             playerController.EnableControls(false);
 
+            PlayWinSound();
             StartCoroutine(WinRoutine());
         }
 
@@ -75,5 +80,23 @@ namespace RW.MonumentValley
             Scene activeScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(activeScene.buildIndex);
         }
+
+        private void PlayBackgroundMusic()
+        {
+            if (backgroundMusic != null) {
+                audioSource.clip = backgroundMusic;
+                audioSource.loop = true;
+                audioSource.volume = 0.5f;
+                audioSource.Play();
+            }
+        }
+
+        private void PlayWinSound()
+        {
+            if (winSound != null) {
+                audioSource.PlayOneShot(winSound);
+            }
+        }
     }
 }
+
