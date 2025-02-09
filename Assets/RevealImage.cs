@@ -16,6 +16,12 @@ public class RevealImage : MonoBehaviour
 
     void Start()
     {
+        if (image == null)
+        {
+            Debug.LogError("Image is not assigned! Please assign an Image in the Inspector.");
+            return;
+        }
+
         StartCoroutine(FadeInAndChangeScene());
     }
 
@@ -39,6 +45,8 @@ public class RevealImage : MonoBehaviour
 
         yield return new WaitForSeconds(displayDuration);
 
-        SceneManager.LoadScene(nextSceneName);
+        if (!string.IsNullOrEmpty(nextSceneName)) {
+            SceneManager.LoadScene(nextSceneName);
+        }
     }
 }
