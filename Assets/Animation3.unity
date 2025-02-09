@@ -176,7 +176,7 @@ MonoBehaviour:
   image: {fileID: 62918226}
   fadeDuration: 2
   displayDuration: 4
-  nextSceneName: 
+  nextSceneName: Menu
 --- !u!114 &62918226
 MonoBehaviour:
   m_ObjectHideFlags: 0
