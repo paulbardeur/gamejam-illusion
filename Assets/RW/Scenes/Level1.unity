@@ -2449,7 +2449,7 @@ PrefabInstance:
     - target: {fileID: 4914362807450694323, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}
       propertyPath: endLevelEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: goToLevelTwo
+      value: goToAnimationOne
       objectReference: {fileID: 0}
     - target: {fileID: 4914362807450694323, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}

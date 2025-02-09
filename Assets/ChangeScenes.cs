@@ -10,6 +10,21 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void goToAnimationOne()
+    {
+        SceneManager.LoadScene("Animation1");
+    }
+
+    public void goToAnimationTwo()
+    {
+        SceneManager.LoadScene("Animation2");
+    }
+
+    public void goToAnimationThree()
+    {
+        SceneManager.LoadScene("Animation3");
+    }
+
     public void goToLevelTwo()
     {
         SceneManager.LoadScene("Level2");
