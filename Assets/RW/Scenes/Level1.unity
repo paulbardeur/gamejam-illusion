@@ -2619,11 +2619,14 @@ PrefabInstance:
         type: 3}
       propertyPath: backgroundMusic
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 8300000, guid: f1bde7c5cee303211a49f9ce68e0e711, type: 3}
     - target: {fileID: 4914362807450694323, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}
       propertyPath: winSound
       value: 
+=======
+>>>>>>> 60bb47451211e118f967e0ea1d061a51ba671bfd
       objectReference: {fileID: 0}
     - target: {fileID: 4914362807450694324, guid: 2230feb93c9fe496aa22349a4aad3007,
         type: 3}

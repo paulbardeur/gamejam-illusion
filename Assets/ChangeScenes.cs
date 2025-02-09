@@ -10,6 +10,11 @@ public class ChangeScenes : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void goToHorloge()
+    {
+        SceneManager.LoadScene("Horloge");
+    }
+
     public void goToAnimationOne()
     {
         SceneManager.LoadScene("Animation1");
