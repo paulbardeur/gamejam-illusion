@@ -5,7 +5,46 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/RW/Scenes/Menu.unity
+    guid: 768c4b7424e26e36bbfbb54c2d306311
+  - enabled: 1
+    path: Assets/RW/Scenes/Level1.unity
+    guid: f9941229962cee27b808447774837df3
+  - enabled: 1
+    path: Assets/RW/Scenes/Level2.unity
+    guid: 90aec34f7eaf3041e9b0367761385fce
+  - enabled: 1
+    path: Assets/RW/Scenes/Level3.unity
+    guid: 4788705d473f0e5cf8ea4cf775ecd906
+  - enabled: 1
+    path: Assets/RW/Scenes/Level4.unity
+    guid: 4f614dfd6a11175cf86a00231cdfea44
+  - enabled: 0
+    path: "Assets/RW/Scenes/Level5-PasAjout\xE9.unity"
+    guid: d92d11599e102d935988044261cf62d2
+  - enabled: 1
+    path: Assets/RW/Scenes/Level6.unity
+    guid: 432c91bc4629a4dceaf1f398e1c2da62
+  - enabled: 1
+    path: Assets/RW/Scenes/Level7.unity
+    guid: 513e44188d7ff4055bd74e070845f327
+  - enabled: 1
+    path: Assets/RW/Scenes/Level8.unity
+    guid: 4936089b899c4477ba6b43121b0dec5c
+  - enabled: 1
+    path: Assets/Animation1.unity
+    guid: 2344547c582b5ebc69e0cd08fa48dcdd
+  - enabled: 1
+    path: Assets/Animation2.unity
+    guid: 7c05d9d2ab61f9ed8b352bcc88d7e17b
+  - enabled: 1
+    path: Assets/Animation3.unity
+    guid: 4de0e71927fb9e7f9b336cf0b938520d
+  - enabled: 1
+    path: Assets/Horloge.unity
+    guid: 93e7db782900240648e3468919d01461
   m_configObjects: {}

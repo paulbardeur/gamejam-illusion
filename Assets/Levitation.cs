@@ -16,9 +16,9 @@ public class Levitation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        const float speed = 0.005f;
+        const float speed = 0.002f;
 
-        if (isUpping && index < 20) {
+        if (isUpping && index < 50) {
             transform.position = new Vector3(transform.position.x, transform.position.y + speed, transform.position.z);
             index += 1;
             return;
